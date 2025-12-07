@@ -1,0 +1,160 @@
+# Theme version
+version: 3.0.0
+
+# Theme tone
+dark: false # 改为亮色主题，更适合教育平台
+favicon: /favicon.png
+banner: "images/banner.jpg"
+banner-dark: "images/banner-dark.jpg"
+
+# Header - 家教平台菜单
+menu:
+  - page: 首页
+    directory: .
+    icon: fa-home
+  - page: 课程介绍
+    directory: courses/
+    icon: fa-book
+  - page: 费用标准
+    directory: pricing/
+    icon: fa-cny
+  - page: 师资力量
+    directory: teachers/
+    icon: fa-users
+  - page: 家长反馈
+    directory: testimonials/
+    icon: fa-comments
+  - page: 联系我们
+    directory: contact/
+    icon: fa-phone
+  - page: 家长登记
+    directory: registration/
+    icon: fa-edit
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
+
+# RSS & Sitemap plugins
+Plugins:
+  hexo-generator-feed
+  hexo-generator-sitemap
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+
+# Content
+excerpt_link: 查看详情
+fancybox: true
+copyright:
+  enable: true
+  content: "© 2025 家教交互平台 版权所有"
+
+# Date_formats
+date_formats:
+  post: "2025年12月05日"
+
+# Sidebar
+sidebar: right
+widgets:
+  - recent_posts  # 最新动态
+  - category      # 课程分类
+  - tagcloud      # 关键词云
+  - archive       # 历史文章
+  - links         # 联系信息
+
+# Widget behavior
+archive_type: 'yearly'
+archive_format: 'YYYY年MM月'
+show_count: true
+recent_posts_limits: 5
+
+# Toc
+toc:
+  enable: true
+  list_number: false
+
+# Article share
+share:
+  local_share: true
+  baidu_share: false
+
+# Miscellaneous
+busuanzi: true  # 开启访问统计
+baidu_analytics:
+google_analytics:
+gauges_analytics:
+
+# MathJax support (家教平台可能不需要，保持默认)
+mathjax:
+  enable: false
+  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+# Reward 
+reward:
+  enable: true
+  wechat:'/css/images/wechat-pay.jpg'
+
+# About page - 修改为家教平台信息
+about:
+  photo_url: '/images/logo.png'  # 平台logo
+  items:
+  - label: 联系电话
+    url: 'tel:19872762235'
+    title: '19872762235'
+  - label: 官方微信
+    url:  '/css/images/alipay-pay.jpg'  # 微信二维码图片路径
+    title: '扫码关注微信小助手'
+  - label: 官方邮箱
+    url: 'mailto:contact@tutoring-platform.com'
+    title: 'contact@tutoring-platform.com'
+  - label: 办公地址
+    title: '香港科技大学广州校区'
+
+# Gitalk comment (根据需要开启)
+gitalk:
+  enable: false
+  owner: 
+  repo: 
+  client_id: 
+  client_secret: 
+  admin: 
+  language: 'zh-CN'
+  pagerDirection: last
+
+# giteement评论
+giteement:
+  enable: false
+
+# Valine comment (适合家长反馈)
+valine:
+  enable: true
+  appId: vLPzzKBu42xSePsXQ9SMFMnu-gzGzoHsz
+  appKey: SXT5mro1fOk42Qd9iF4lqApa
+  notify: true  # 开启邮件通知，及时获取家长反馈
+  verify: false
+  pageSize: 10
+  avatar: mm
+  lang: zh-cn
+  placeholder: 请留下您的宝贵意见和建议...
+  guest_info: nick,mail,link
+
+# Changyan comment
+changyan:
+  enable: false
+
+# Other comments
+comment:
+  disqus: 
+  livere: 
+  uyan: 
+  cloudTie: 
+
+# Friend Links - 修改为家教相关链接
+links:
+  - title: 教育资讯
+    url: http://www.education-news.com/
+  - title: 学习资源
+    url: http://www.learning-resources.com/
+  - title: 家长论坛
+    url: http://www.parents-forum.com/
