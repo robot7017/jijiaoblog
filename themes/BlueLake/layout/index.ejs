@@ -1,0 +1,16 @@
+<% if (page.posts && page.posts.length > 0) { %>
+  <!-- 有文章时，在 /posts 路径显示文章列表 -->
+  <% page.posts.each(function(post){ %>
+    <%- partial('_partial/article', {post: post, index: true}) %>
+  <% }) %>
+  <% if (page.total > 1){ %>
+    <nav id="page-nav">
+      <%- paginator({prev_text: '&laquo;', next_text: '&raquo;'}) %>
+    </nav>
+  <% } %>
+<% } else { %>
+  <!-- 无文章时，根路径 / 显示静态首页内容 -->
+  <div class="home-content">
+    <%- page.content %>
+  </div>
+<% } %>
