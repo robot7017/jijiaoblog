@@ -12,8 +12,9 @@ language: zh-CN
 timezone: Asia/Shanghai
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://robot7017.github.io  # GitHub Pages的基础域名
-root: /jiajiaoblog/  # 必须与你的GitHub仓库名一致（仓库名是jiajiao，此处填/jiajiao/）permalink: :year/:month/:day/:title/
+url: https://xingzhi0317.github.io/ldx/  # GitHub Pages的基础域名
+root: /ldx/  # 必须与你的GitHub仓库名一致（仓库名是jiajiao，此处填/jiajiao/）
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -105,14 +106,15 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: BlueLake
+# theme: landscape
 
 # 放在 Extensions 之后，Deployment 之前
 tutoring:
   # 联系信息
   contact:
     phone: "19872762235"  # 替换为你的联系电话
-    wechat_qr: /css/images/alipay-pay.jpg  # 微信二维码图片路径
-    reward: /css/images/wechat-pay.jpg  # 替换为你的邮箱
+    wechat_qr: /ldx/css/images/alipay-pay.jpg  # 微信二维码图片路径
+    reward: /ldx/css/images/wechat-pay.jpg  # 替换为你的邮箱
     address: "香港科技大学广州校区"  # 办公地址
   
   # 费用标准（示例，可根据实际调整）
@@ -153,6 +155,7 @@ tutoring:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repository: git@github.com:robot7017/jijiaoblog.git  # 注意：用户名/仓库名是否正确？
+  type: git  # 注意：不用加引号，直接写 git（你同学加了 'git' 也能生效，但标准写法不加）
+  repository: https://github.com/xingzhi0317/ldx.git  # 你的仓库 SSH 地址（或用 HTTPS 地址）
+  branch: gh-pages  # 固定部署到 gh-pages 分支，GitHub Pages 专用
   
